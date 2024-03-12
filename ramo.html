@@ -1,0 +1,52 @@
+<?php 
+if(isset($_POST['submit'])){
+    include_once('escot.php');
+
+    $ramo = $_POST['ramo'];
+    $historia = $_POST['historia'];
+    $fundacao - $_POST['fundacao'];
+
+    $result = mysqli_query($conexao, " INSERT INTO ramos(ramo, historia, fudaçao ) 
+    values ( '$ramo', '$historia', '$fundacao )");
+
+
+
+}
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="ramo.css">
+</head>
+<body>
+    <div class="box">
+        <form action="ramo.php" method="post">
+            <fieldset>
+                <legend>dados do ramo</legend>
+                <br>
+                <div class="inputbox">
+                    <label for="ramo">digite o ramo </label>
+                    <input type="text" name="ramo" id="ramo"class="inputuser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="historia">digite a historia do ramo </label>
+                    <input type="text" name="historia" id="historia"class="his" required>
+                </div>
+                <div class="inputbox">
+                    <label for="fundacao">digite o ano de  fundacao</label>
+                    <input type="text" name="fundacao" id="fundacao"class="inputuser" required>
+                </div>
+            
+            </fieldset>
+        </form>
+    </div>
+    <script src="ramo.js"></script>
+</body>
+</html>

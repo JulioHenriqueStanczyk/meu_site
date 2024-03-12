@@ -1,0 +1,69 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="codex.css">
+</head>
+<body>
+    <div class="box">
+        <form action="escotistas.php" method="POST">
+            <fieldset>
+                <legend>escotitas dados</legend>
+                <br>
+                <div class="inputbox">
+                    <label for="registro">seu registro</label>
+                    <input type="text" name="registro"  id="registro" class="inputuser" required>
+                    
+                </div> 
+                <div class="inputbox">
+                    <label for="nome">seu nome completo</label>
+                    <input type="text" name="nome"  id="nome" class="inputuser" required>
+                    
+                </div>
+                <div class="inputbox">
+                    <label for="tempo">ano de ingreço no escotismo</label>
+                    <input type="date" name="tempo"  id="tempo" class="inputuser" required>
+                    
+                </div> <div class="inputbox">
+                    <label for="grupo">a qual grupo vc pertence</label>
+                    <input type="text" name="grupo"  id="grupo" class="inputuser" required>
+                    
+                </div>
+                <div class="inputbox">
+                    <label for="tropa">qual foi sua tropa</label>
+                    <input type="text" name="tropa"  id="tropa" class="inputuser" required>
+                    
+                </div>
+                <div class="inputbox">
+                    <label for="patrulha">qual era sua patrulha</label>
+                    <input type="text" name="patrulha"  id="patrulha" class="inputuser" required>
+                    
+                </div>
+                <div class="inputbox">
+                    <label for="historia">conte sua historia</label>
+                    <input type="text" name="historia"  id="historia" class="his" required>
+                    
+                </div>
+                <input type="submit" name="submit" id="submit" onclick="nest(); return false">
+
+            </fieldset>
+        </form>
+
+    </div>
+    <script type="text/javascript">
+        var userip;
+      </script>
+  
+      <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+  
+      <script type="text/javascript">
+        document.write("Seu IP e:", userip);
+      </script>
+      
+</body>
+</html>

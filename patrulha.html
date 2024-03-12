@@ -1,0 +1,44 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="patrulha.css">
+</head>
+<body>
+
+    <div class="box">
+        <form action="patrulha.php" method="$_POST">
+            <fieldset>
+                <legend>patrulha dados</legend>
+                <br>
+                <div class="inputbox">
+                    <label for="ramo">digite o ramo da patrulha</label>
+                    <input type="text" name="ramo" id="ramo"class="inputuser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="tropa">digite a tropa da patrulha</label>
+                    <input type="text" name="tropa" id="tropa"class="inputuser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="nome">digite o nome da patrulha</label>
+                    <input type="text" name="nome" id="nome"class="inputuser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="historia">digite a historia da patrulha</label>
+                    <input type="text" name="historia" id="historia"class="his" required>
+                </div>
+                <input type="submit" name="submit" id="submit" onclick="diretorio(); return false">
+            </fieldset>
+        </form>
+    </div>
+    <script src="patrulha.js"></script>
+</body>
+</html>
